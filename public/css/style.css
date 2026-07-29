@@ -1269,6 +1269,176 @@ img { max-width: 100%; display: block; }
 .filter-check input { width: 16px; height: 16px; accent-color: var(--primary); }
 
 /* =============================================
+   STATS BAND (MacBook Air page)
+============================================= */
+.stats-band { background: var(--primary); padding: 34px 0; }
+.stat-card-white {
+  background: #fff;
+  border-radius: 12px;
+  padding: 22px 20px;
+  height: 100%;
+}
+.stat-card-white h3 { font-weight: 800; font-size: 28px; color: var(--text-dark); margin-bottom: 4px; }
+.stat-card-white p { font-size: 13px; color: var(--text-muted); margin-bottom: 0; }
+
+/* =============================================
+   NUMBERED TAB LIST + FIX CONTENT CARD
+============================================= */
+.numbered-tab-list { display: flex; flex-direction: column; gap: 10px; }
+.numbered-tab-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: var(--light-gray);
+  border-radius: 10px;
+  padding: 14px 18px;
+  font-weight: 600;
+  font-size: 14.5px;
+  color: var(--text-dark);
+  cursor: pointer;
+}
+.numbered-tab-item .num { font-weight: 800; font-size: 13px; color: var(--text-muted); }
+.numbered-tab-item.active { background: var(--navy); color: #fff; }
+.numbered-tab-item.active .num { color: var(--yellow); }
+
+.fix-content-card { background: var(--light-gray); border-radius: var(--radius); overflow: hidden; height: 100%; }
+.fix-content-card .row { height: 100%; }
+.fix-content-card img { width: 100%; height: 100%; min-height: 260px; object-fit: cover; }
+.fix-content-body { padding: 30px; }
+.fix-content-body h4 { font-weight: 700; font-size: 20px; margin-bottom: 6px; }
+.fix-content-body .sub-link { color: var(--primary); font-size: 13px; font-weight: 600; display: block; margin-bottom: 14px; }
+.fix-content-body p { font-size: 14px; color: var(--text-muted); line-height: 1.7; margin-bottom: 18px; }
+.fix-tags { display: flex; gap: 10px; margin-bottom: 22px; }
+.fix-tags span { background: #fff; border: 1px solid var(--border-color); border-radius: 50px; padding: 5px 14px; font-size: 12px; font-weight: 600; color: var(--text-dark); }
+
+/* =============================================
+   DARK FEATURE STRIP (MacBook Pro page)
+============================================= */
+.dark-feature-strip { background: var(--navy-2); padding: 40px 0; }
+.dark-feature-item { text-align: center; color: #fff; }
+.dark-feature-item i { color: var(--yellow); font-size: 26px; margin-bottom: 12px; display: block; }
+.dark-feature-item h6 { color: #fff; font-weight: 700; font-size: 15px; margin-bottom: 8px; }
+.dark-feature-item p { color: rgba(255,255,255,.6); font-size: 12.5px; margin-bottom: 0; line-height: 1.5; }
+
+/* Text-only service card (no image) */
+.text-service-card { background: var(--light-gray); border-radius: var(--radius); padding: 26px; height: 100%; }
+.text-service-card h6 { font-weight: 700; font-size: 16px; margin-bottom: 12px; line-height: 1.4; }
+.text-service-card p { font-size: 13.5px; color: var(--text-muted); line-height: 1.65; margin-bottom: 20px; }
+
+/* Split checklist grid with center image (specialize-in-repairs sections) */
+.center-image-grid { display: flex; align-items: stretch; gap: 24px; }
+.center-image-grid .grid-col { flex: 1; display: flex; flex-direction: column; gap: 16px; justify-content: center; }
+.center-image-grid .grid-img { flex: 0 0 300px; border-radius: var(--radius); overflow: hidden; }
+.center-image-grid .grid-img img { width: 100%; height: 100%; object-fit: cover; }
+
+/* =============================================
+   MACUSER GROUP LISTING
+============================================= */
+.topic-pills { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; }
+.topic-pill {
+  border: 1px solid var(--border-color);
+  background: #fff;
+  border-radius: 50px;
+  padding: 9px 20px;
+  font-size: 13.5px;
+  font-weight: 600;
+  color: var(--text-dark);
+  cursor: pointer;
+}
+.topic-pill.active { background: var(--navy); color: #fff; border-color: var(--navy); }
+.inline-search { position: relative; max-width: 280px; margin-left: auto; }
+.inline-search input {
+  width: 100%;
+  border-radius: 50px;
+  border: 1px solid var(--border-color);
+  padding: 10px 18px 10px 40px;
+  font-size: 13.5px;
+  background: var(--light-gray);
+}
+.inline-search i { position: absolute; left: 16px; top: 50%; transform: translateY(-50%); color: var(--text-muted); }
+
+.community-card { background: var(--light-gray); border-radius: var(--radius); overflow: hidden; height: 100%; }
+.community-thumb { position: relative; }
+.community-thumb img { width: 100%; aspect-ratio: 4/2.6; object-fit: cover; }
+.community-tag {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  background: var(--yellow);
+  color: var(--navy);
+  font-size: 10.5px;
+  font-weight: 800;
+  letter-spacing: .4px;
+  padding: 4px 10px;
+  border-radius: 4px;
+  text-transform: uppercase;
+}
+.community-body { padding: 20px; }
+.community-meta { font-size: 12px; color: var(--text-muted); margin-bottom: 10px; }
+.community-body h6 { font-weight: 700; font-size: 15px; line-height: 1.4; margin-bottom: 10px; }
+.community-body p { font-size: 13px; color: var(--text-muted); line-height: 1.6; margin-bottom: 16px; }
+.community-author { display: flex; align-items: center; gap: 10px; font-size: 12.5px; color: var(--text-muted); font-weight: 600; }
+.community-author img { width: 26px; height: 26px; border-radius: 50%; object-fit: cover; }
+
+/* =============================================
+   MACUSER GROUP DETAILS (single post)
+============================================= */
+.post-breadcrumb { background: var(--light-gray); padding: 14px 0; font-size: 14px; color: var(--text-muted); }
+.post-breadcrumb a { color: var(--text-muted); }
+.post-breadcrumb a:hover { color: var(--primary); }
+.post-breadcrumb .current { color: var(--text-dark); font-weight: 600; }
+
+.post-title { font-weight: 800; font-size: 28px; margin: 24px 0 16px; }
+.post-header-row { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 14px; margin-bottom: 24px; }
+.post-author { display: flex; align-items: center; gap: 12px; }
+.post-author img { width: 44px; height: 44px; border-radius: 50%; object-fit: cover; }
+.post-author h6 { font-weight: 700; font-size: 14.5px; margin-bottom: 2px; }
+.post-author span { font-size: 12.5px; color: var(--text-muted); }
+.post-meta-right { font-size: 13px; color: var(--text-muted); }
+
+.post-hero-img { width: 100%; border-radius: var(--radius); aspect-ratio: 16/7; object-fit: cover; margin-bottom: 30px; }
+.post-body h3 { font-weight: 700; font-size: 20px; margin: 28px 0 14px; }
+.post-body p { font-size: 15px; color: var(--text-muted); line-height: 1.8; margin-bottom: 16px; }
+.post-body ul { padding-left: 20px; margin-bottom: 20px; }
+.post-body ul li { font-size: 14.5px; color: var(--text-muted); margin-bottom: 8px; line-height: 1.6; }
+.post-mid-img { width: 100%; border-radius: var(--radius); aspect-ratio: 16/8; object-fit: cover; margin: 26px 0; }
+
+.callout-box {
+  background: var(--light-gray);
+  border-left: 4px solid var(--primary);
+  border-radius: 10px;
+  padding: 24px 28px;
+  margin: 30px 0;
+}
+.callout-box h6 { font-weight: 700; margin-bottom: 10px; }
+.callout-box p { font-size: 14.5px; color: var(--text-muted); margin-bottom: 0; line-height: 1.7; }
+
+.post-actions { display: flex; gap: 12px; margin: 30px 0; }
+.post-actions button, .post-actions .post-tag {
+  background: var(--light-gray);
+  border: none;
+  border-radius: 50px;
+  padding: 9px 18px;
+  font-size: 13.5px;
+  font-weight: 600;
+  color: var(--text-dark);
+}
+
+.reply-card { display: flex; gap: 14px; padding: 22px 0; border-bottom: 1px solid var(--border-color); }
+.reply-card img { width: 42px; height: 42px; border-radius: 50%; object-fit: cover; flex-shrink: 0; }
+.reply-header { display: flex; align-items: center; gap: 10px; margin-bottom: 8px; flex-wrap: wrap; }
+.reply-header h6 { font-weight: 700; font-size: 14.5px; margin-bottom: 0; }
+.reply-badge { background: rgba(29,101,209,.1); color: var(--primary); font-size: 11px; font-weight: 700; padding: 2px 10px; border-radius: 50px; }
+.reply-date { font-size: 12.5px; color: var(--text-muted); }
+.reply-card p { font-size: 14px; color: var(--text-muted); line-height: 1.7; margin-bottom: 10px; }
+.reply-footer { display: flex; gap: 20px; font-size: 13px; color: var(--text-muted); }
+.reply-footer a { color: var(--text-muted); }
+
+.reply-form-box { background: var(--light-gray); border-radius: var(--radius); padding: 26px; margin-top: 30px; }
+.reply-form-box h6 { font-weight: 700; margin-bottom: 16px; }
+.reply-form-box textarea { border-radius: 10px; border: 1px solid var(--border-color); padding: 14px; font-size: 14px; width: 100%; margin-bottom: 16px; }
+
+/* =============================================
    RESPONSIVE
 ============================================= */
 @media (max-width: 991.98px) {
