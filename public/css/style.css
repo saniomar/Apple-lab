@@ -1438,6 +1438,66 @@ img { max-width: 100%; display: block; }
 .reply-form-box h6 { font-weight: 700; margin-bottom: 16px; }
 .reply-form-box textarea { border-radius: 10px; border: 1px solid var(--border-color); padding: 14px; font-size: 14px; width: 100%; margin-bottom: 16px; }
 
+/* Breadcrumb */
+#breadcrumb {
+    padding: 50px 0;
+}
+@media only screen and (min-width: 300px) and (max-width: 500px) {
+    #breadcrumb {
+        padding: 30px 0;
+    }
+}
+/* Breadcrumb */
+
+/* Checkout Page */
+#checkout_page {
+    padding: 60px 0;
+}
+#checkout_page .btn {
+    background-color: var(--blue);
+    color: var(--border-soft);
+    border-radius: 10px;
+}
+#checkout_page .btn:hover {
+    background-color: var(--blue-dark);
+    color: var(--border-color);
+}
+#checkout_page .accordion-button {
+    background-color: var(--offwhite-color);
+    font-size: 18px;
+    font-style: italic;
+    font-weight: 600;
+}
+#checkout_page .accordion-button:focus {
+    box-shadow: none;
+}
+#checkout_page .accordion-button:not(.collapsed) {
+    color: var(--navy);
+}
+#checkout-button-addon2 {
+    border-radius: 0 !important;
+    border: none;
+}
+.checkout_online_payment_icon li {
+    display: inline-block;
+}
+.checkout_online_payment_icon li img {
+    width: 80px;
+}
+#checkout_page_form {
+    position: sticky;
+    top: 100px;
+}
+@media only screen and (min-width: 300px) and (max-width: 500px) {
+    #checkout_page {
+        padding: 30px 0;
+    }
+    .checkout_online_payment_icon li img {
+        width: 60px;
+    }
+}
+/* Checkout Page */
+
 /* =============================================
    RESPONSIVE
 ============================================= */
