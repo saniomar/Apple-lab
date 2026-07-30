@@ -1151,7 +1151,7 @@ img { max-width: 100%; display: block; }
 .pd-thumbs img { width: 64px; height: 64px; object-fit: cover; border-radius: 8px; border: 2px solid var(--border-color); cursor: pointer; }
 .pd-thumbs img.active { border-color: var(--primary); }
 .pd-main-img { flex: 1; border-radius: var(--radius); overflow: hidden; }
-.pd-main-img img { width: 100%; height: 380px; object-fit: cover; }
+.pd-main-img img { width: 100%; height: 420px; object-fit: cover; }
 
 .pd-badges { display: flex; gap: 12px; margin-top: 18px; }
 .pd-badge { flex: 1; background: var(--light-gray); border-radius: 10px; padding: 14px 10px; text-align: center; font-size: 12.5px; font-weight: 600; color: var(--text-dark); }
